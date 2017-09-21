@@ -1,6 +1,7 @@
 {
   "require": {
-    "bavix/builder": "^0.0"
+    "bavix/builder": "^0.0",
+    "symfony/yaml": "3.4.x-dev"
   },
   "autoload": {
     "psr-4": {

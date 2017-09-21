@@ -1,0 +1,2 @@
+app: \App\HttpProcessor
+api: \Api\HttpProcessor
