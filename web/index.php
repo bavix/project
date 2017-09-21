@@ -11,7 +11,7 @@ $builder = new \Bavix\Builder\Builder($root);
 /**
  * @var \Bavix\Processors\Kernel
  */
-$kernel  = new \Bavix\Processors\Kernel($builder->factory());
+$kernel  = new \Bavix\Processors\Kernel(factory());
 
 /**
  * load bundles on kernel
