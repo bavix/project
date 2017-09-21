@@ -1,8 +1,8 @@
 <?php
 
-namespace App;
+namespace Api;
 
-use App\Http\HomeController;
+use Api\Http\HomeController;
 use Bavix\Processors\Manager;
 
 class HttpProcessor extends Manager

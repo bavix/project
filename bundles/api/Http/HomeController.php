@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http;
+namespace Api\Http;
 
 use Bavix\Processors\Manager;
 use Psr\Http\Message\ServerRequestInterface;
 
-class ApiController extends Manager
+class HomeController extends Manager
 {
 
     public function default(ServerRequestInterface $request)

@@ -4,7 +4,8 @@
   },
   "autoload": {
     "psr-4": {
-      "App\\": "bundles/app/"
+      "App\\": "bundles/app/",
+      "Api\\": "bundles/api/"
     }
   }
 }
