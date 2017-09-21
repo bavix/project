@@ -11,7 +11,7 @@ class HttpProcessor extends Manager
     /**
      * @var string
      */
-    protected $actionName = 'processor';
+    protected $attribute = 'processor';
 
     /**
      * @return string
