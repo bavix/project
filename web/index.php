@@ -4,9 +4,9 @@ $root = dirname(__DIR__);
 include_once $root . '/vendor/autoload.php';
 
 /**
- * @var \App\Builder $builder
+ * @var \Bavix\Builder\Builder $builder
  */
-$builder = new \App\Builder($root);
+$builder = new \Bavix\Builder\Builder($root);
 
 /**
  * @var \Bavix\Processors\Kernel

@@ -1,16 +1,8 @@
 {
   "require": {
-    "bavix/processors": "^0.0",
-    "bavix/content": "^1.0",
-    "bavix/config": "^1.0",
-    "bavix/lumper": "^1.0",
-    "bavix/router": "^1.0",
-    "bavix/http": "^0.0"
+    "bavix/builder": "^0.0"
   },
   "autoload": {
-    "files": [
-      "helpers/global.php"
-    ],
     "psr-4": {
       "App\\": "bundles/app/"
     }
