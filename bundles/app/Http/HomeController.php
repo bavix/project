@@ -10,10 +10,7 @@ class HomeController extends Manager
 
     public function default(ServerRequestInterface $request)
     {
-        \ob_start();
-        \highlight_file(__FILE__);
-
-        return \ob_get_clean();
+        return \highlight_file(__FILE__, true);
     }
 
 }
