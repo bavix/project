@@ -12,7 +12,17 @@ app:
   type: prefix
   path: /
 
-  resolver: %resolver%
+  resolver:
+    api:
+      type: pattern
+      path: api(/)
+
+      defaults:
+        processor: home
+        action: default
+        bundle: api
+
+    default: %resolver.default%
 
   defaults:
     bundle: app

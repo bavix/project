@@ -10,14 +10,7 @@ class HomeController extends Manager
 
     public function default(ServerRequestInterface $request)
     {
-        return [
-            'attributes'    => $request->getAttributes(),
-            'queryParams'   => $request->getQueryParams(),
-            'parsedBody'    => $request->getParsedBody(),
-            'cookieParams'  => $request->getCookieParams(),
-            'serverParams'  => $request->getServerParams(),
-            'uploadedFiles' => $request->getUploadedFiles(),
-        ];
+        return $this->cookies->export();
     }
 
 }
