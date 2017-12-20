@@ -1,5 +1,7 @@
 composer.phar
 /vendor/
 /etc/_bavix.yml
+/etc/_bavix.php
 composer.lock
 .idea
+compile/*

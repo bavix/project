@@ -1,4 +1,0 @@
-request: \Bavix\Http\Factory\ServerRequestFactory
-message: \Bavix\Http\Factory\MessageFactory
-stream: \Bavix\Http\Factory\StreamFactory
-uri: \Bavix\Http\Factory\UriFactory

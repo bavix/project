@@ -1,9 +1,8 @@
 <?php
 
-namespace App;
+namespace Bundle\App;
 
-use App\Http\HomeController;
-use Bavix\Processors\Manager;
+use Project\Manager;
 
 class HttpProcessor extends Manager
 {
@@ -18,7 +17,7 @@ class HttpProcessor extends Manager
      */
     protected function home(): string
     {
-        return HomeController::class;
+        return Http\HomeController::class;
     }
 
 }
