@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundle\Api;
+namespace Bundle\Auth;
 
 use Project\Manager;
 
@@ -15,9 +15,9 @@ class HttpProcessor extends Manager
     /**
      * @return string
      */
-    protected function home(): string
+    protected function login(): string
     {
-        return Http\HomeController::class;
+        return Http\LoginController::class;
     }
 
 }

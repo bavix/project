@@ -6,7 +6,7 @@ include_once $root . '/vendor/autoload.php';
 /**
  * @var \Bavix\Builder\Builder $builder
  */
-$builder = new \Bavix\Builder\Builder($root);
+$builder = new \Project\Builder($root);
 
 /**
  * @var \Bavix\Processors\Kernel

@@ -2,14 +2,39 @@
 
 return [
 
-    'api' => [
-        'type' => 'prefix',
-        'path' => '/api/',
+    'auth' => [
 
-        'resolver' => '%resolver%',
+        'type' => 'prefix',
+        'path' => '/auth/',
+
+        'resolver' => [
+
+            'action' => [
+                'type' => 'pattern',
+                'path' => '<processor>',
+
+                'methods' => ['GET']
+            ],
+
+            'store' => [
+                'type' => 'pattern',
+                'path' => '<processor>',
+
+                'defaults' => [
+                    'processor' => 'login',
+                    'action'    => 'store'
+                ],
+
+                'methods' => ['POST']
+            ]
+
+        ],
+
         'defaults' => [
-            'bundle' => 'api'
+            'bundle' => 'auth',
+            'action' => 'default',
         ]
+
     ],
 
     'app' => [

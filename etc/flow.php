@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'ext'     => 'html',
     'compile' => dirname(__DIR__) . '/compile',
     'minify'  => true,
     'extends' => [
@@ -8,6 +9,7 @@ return [
         \Bavix\Flow\Minify\Extensions\CollapseWhitespace::class
     ],
     'folders' => [
-        'app' => dirname(__DIR__) . '/view/app'
+        'app'  => dirname(__DIR__) . '/view/app',
+        'auth' => dirname(__DIR__) . '/view/auth',
     ]
 ];
