@@ -7,6 +7,11 @@ return [
     'session'  => [
         'password' => 'your-password'
     ],
+    'db'       => [
+        'database' => 'bavix',
+        'username' => 'root',
+        'password' => 'root',
+    ],
     'resolver' => [
         'default' => [
             'type' => 'pattern',
