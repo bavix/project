@@ -20,4 +20,12 @@ class HttpProcessor extends Manager
         return Http\LoginController::class;
     }
 
+    /**
+     * @return string
+     */
+    protected function register(): string
+    {
+        return Http\RegisterController::class;
+    }
+
 }
