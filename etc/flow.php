@@ -9,7 +9,8 @@ return [
         \Bavix\Flow\Minify\Extensions\CollapseWhitespace::class
     ],
     'folders' => [
-        'app'  => dirname(__DIR__) . '/view/app',
-        'auth' => dirname(__DIR__) . '/view/auth',
+        'app'     => dirname(__DIR__) . '/view/app',
+        'auth'    => dirname(__DIR__) . '/view/auth',
+        'layouts' => dirname(__DIR__) . '/view/layouts',
     ]
 ];

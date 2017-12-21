@@ -14,13 +14,14 @@
     }
   ],
   "require": {
-    "bavix/builder": "^0.0",
-    "illuminate/database": "^5.5"
+    "bavix/builder": "^0.1",
+    "illuminate/database": "^5.5",
+    "filp/whoops": "^2.1"
   },
   "autoload": {
     "psr-4": {
-      "Project\\": "src/",
-      "Bundle\\": "bundles/"
+      "Project\\": "src/Project",
+      "Bundle\\": "src/Bundle/"
     }
   }
 }

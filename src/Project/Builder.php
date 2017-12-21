@@ -3,7 +3,6 @@
 namespace Project;
 
 use Bavix\Lumper\Bind;
-use Illuminate\Container\Container;
 
 class Builder extends \Bavix\Builder\Builder
 {

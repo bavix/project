@@ -3,27 +3,28 @@
 namespace Bundle\Auth\Http;
 
 use Bavix\Exceptions\Invalid;
-use Bavix\Slice\Slice;
-use Project\Manager;
+use Bavix\Http\ServerRequest;
 use Project\Models\User;
-use Psr\Http\Message\ServerRequestInterface;
+use Project\Manager;
 
 class LoginController extends Manager
 {
 
-    public function default(ServerRequestInterface $request)
+    public function default(ServerRequest $request)
     {
         return $this->flow->render('auth:login', [
+            'title'  => 'Auth Login',
             'action' => '/auth/login'
         ]);
     }
 
-    public function store(ServerRequestInterface $request)
+    public function store(ServerRequest $request)
     {
-        $slice = new Slice($request->getParsedBody());
+        $password = $this->builder->password();
+        $slice    = $request->getParsedBody();
 
         $user = User::query()
-            ->where('email', $slice->getRequired('email'))
+            ->where('email', $slice->getRequiredEmail('email'))
             ->first();
 
         if (!$user)
@@ -31,7 +32,7 @@ class LoginController extends Manager
             throw new Invalid('User not found!');
         }
 
-        if (\password_verify($slice->getRequired('password'), $user->password))
+        if ($password->verify($slice->getRequired('password'), $user->password))
         {
             var_dump($slice->getRequired('password'));
             die;
