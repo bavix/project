@@ -23,5 +23,10 @@
       "Project\\": "src/Project",
       "Bundle\\": "src/Bundle/"
     }
+  },
+  "scripts": {
+      "post-root-package-install": [
+          "@php -r \"file_exists('etc/_bavix.php') || copy('etc/_bavix.dist.php', 'etc/_bavix.php');\""
+      ]
   }
 }
