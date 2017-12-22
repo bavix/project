@@ -3,7 +3,7 @@
 return [
     'ext'     => 'html',
     'compile' => dirname(__DIR__) . '/compile',
-    'minify'  => true,
+    // 'minify'  => true,
     'extends' => [
         \Bavix\Flow\Minify\Extensions\RemoveComments::class,
         \Bavix\Flow\Minify\Extensions\CollapseWhitespace::class
