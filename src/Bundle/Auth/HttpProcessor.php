@@ -15,6 +15,14 @@ class HttpProcessor extends Manager
     /**
      * @return string
      */
+    protected function logout(): string
+    {
+        return Http\LogoutController::class;
+    }
+
+    /**
+     * @return string
+     */
     protected function login(): string
     {
         return Http\LoginController::class;

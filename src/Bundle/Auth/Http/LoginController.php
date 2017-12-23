@@ -4,11 +4,16 @@ namespace Bundle\Auth\Http;
 
 use Bavix\Exceptions\Invalid;
 use Bavix\Http\ServerRequest;
+use Project\Middleware\GuestMiddleware;
 use Project\Models\User;
 use Project\Manager;
 
 class LoginController extends Manager
 {
+
+    protected $middleware = [
+        GuestMiddleware::class
+    ];
 
     public function default(ServerRequest $request)
     {
