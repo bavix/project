@@ -14,7 +14,7 @@
     }
   ],
   "require": {
-    "bavix/builder": "^0.0"
+    "bavix/builder": "^0.1"
   },
   "autoload": {
     "psr-4": {
